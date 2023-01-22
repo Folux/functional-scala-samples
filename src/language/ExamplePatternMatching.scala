@@ -1,0 +1,5 @@
+package language
+
+class ExamplePatternMatching {
+
+}

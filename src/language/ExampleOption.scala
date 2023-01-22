@@ -1,0 +1,5 @@
+package language
+
+object ExampleOption {
+
+}
