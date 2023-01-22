@@ -1,6 +1,6 @@
 package list
 
-object CheckingOccourance extends App {
+object CheckingOccurrence extends App {
   val names = List("Olaf", "Angela", "Gerhard", "Helmut")
 
   // non-functional approach
