@@ -19,8 +19,8 @@ object CheckingOccurrence extends App {
 
   // functional approach
   // -------------------------------------
-  println("Found the name: " +
-    names.exists(name => name == "Angela")
-  )
+  val fountNameFun = names.exists(name => name == "Angela")
+  //                      .exists(_ == "Angela")
+  println(s"Found the name: $fountNameFun")
   // prints: Found the name: true
 }

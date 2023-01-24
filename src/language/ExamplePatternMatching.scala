@@ -7,10 +7,11 @@ object ExamplePatternMatching extends App{
   }
   
   val shortList = List("A", "B", "C")
-  val myElementOpt = getElement(9, shortList)
+  val tenthElementOpt = getElement(9, shortList)
 
-  myElementOpt match {
+  tenthElementOpt match {
     case Some(element) => println(s"The 10th element is $element")
-    case None => println(s"There is no 10th") // prints this line
+    case None => println(s"There is no 10th")
   }
+  // prints: There is no 10th
 }

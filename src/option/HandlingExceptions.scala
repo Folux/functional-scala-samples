@@ -6,14 +6,17 @@ object HandlingExceptions extends App {
   }
 
   val shortList = List("A", "B", "C")
-  println(s"The 10th element is ${getElement(9, shortList)}")
+  
+  val tenthElement = getElement(9, shortList)
+  println(s"The 10th element is $tenthElement")
   // Throws IndexOutOfBoundsException
 
   def getElementSavley(index: Integer, list: List[String]): Option[String] = {
     if (index > list.length - 1) None
     else Some(list(index))
   }
-  println("The 10th element is " +
-    getElementSavley(9, shortList).getOrElse("not there"))
+  
+  val tenthElementOpt = getElementSavley(9, shortList)
+  println(s"The 10th element is ${tenthElementOpt.getOrElse("not there")}")
   // prints: The 10th element is not there
 }
