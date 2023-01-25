@@ -8,7 +8,7 @@ object ExampleHigerOrderFunction extends App {
   }
 
   def checkNames(name: String, f: String => Boolean) = {
-    if (f(name)) println("Your name is not Good")
+    if (f(name)) println("Your name is not good")
     else println("Your name is OK")
   }
 
