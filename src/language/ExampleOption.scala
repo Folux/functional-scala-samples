@@ -9,26 +9,19 @@ object ExampleOption extends App {
     null
   )
   
-  val text =
-    chancellors
-      .map(person => person.name) // Throws NullPointer Exception
-      .mkString(" follows ")
-
-  println(text)
-  
   val chacellorOptList: List[Option[Person]] = List(
     Some(Person("Angela", "Merkel")),
     Some(Person("Olaf", "Scholz")),
     None
   )
 
-  val text2 =
+  val text =
     chacellorOptList.map(personOpt =>
         personOpt.map(person => person.name)
           .getOrElse("<unknown>")
       )
       .mkString(" follows ")
 
-  println(text2)
+  println(text)
   // prints: Angela follows Olaf follows <unknown>
 }
