@@ -11,7 +11,7 @@ object ExampleOption extends App {
   
   val text =
     chancellors
-      .map(_.name) // Throws NullPointer Exception
+      .map(person => person.name) // Throws NullPointer Exception
       .mkString(" follows ")
 
   println(text)
